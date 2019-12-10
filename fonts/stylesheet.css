@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: local('Ubuntu'),
+        url('subset-Ubuntu.woff2') format('woff2'),
+        url('subset-Ubuntu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
+        url('subset-Ubuntu-Bold.woff2') format('woff2'),
+        url('subset-Ubuntu-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: local('Ubuntu Medium'), local('Ubuntu-Medium'),
+        url('subset-Ubuntu-Medium.woff2') format('woff2'),
+        url('subset-Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: local('Ubuntu Light'), local('Ubuntu-Light'),
+        url('subset-Ubuntu-Light.woff2') format('woff2'),
+        url('subset-Ubuntu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gagalin';
+    src: local('Gagalin Regular'), local('Gagalin-Regular'),
+        url('subset-Gagalin-Regular.woff2') format('woff2'),
+        url('subset-Gagalin-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lifehack';
+    src: local('Lifehack Medium'), local('Lifehack-Medium'),
+        url('subset-Lifehack-Medium.woff2') format('woff2'),
+        url('subset-Lifehack-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+

@@ -1,0 +1,178 @@
+.team {
+    height: 100vh;
+    background-image: url("/img/bg/bg-team.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    .section__title {
+		margin-bottom: 12%;
+	}
+
+    @include tablets {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(#2f3234, .93);
+		}
+	}
+}
+
+.team__wrapper {
+    position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	background: rgba(#2f3234, .93);
+	padding: 5% 5% 0 7%;
+
+
+	@include tablets {
+		position: relative;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		text-align: center;
+		background: transparent;
+		padding: 0;
+	}
+}
+
+.team__inner {
+	width: 100%;
+	//margin-top: 25%;
+}
+
+.team-acco__list {
+	@include tablets {
+		padding-bottom: rem(20px);
+	}
+}
+
+.team-acco__item {
+  margin-bottom: rem(20px);
+  
+  @include tablets {
+    margin-bottom: rem(30px);
+  }
+
+  &--open {
+
+    .team-acco__content{
+		height: 100px;
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: rem(30px);
+
+        @include tablets {
+			flex-direction: column;
+			align-items: center;
+			height: 100%;
+			padding-left: 0;
+			margin-bottom: 0;
+        }
+    }
+    .team-acco__name-link {
+        color: $yellow;
+
+        &:before {
+            transform: rotate(-180deg);
+        }
+    }
+    @include tablets {
+        display: inline-block;
+        flex-direction: column;
+    }
+  }
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.team-acco__name-link {
+	color: #fff;
+	font-size: rem(14px);
+	@include gagalin;
+	text-decoration: none;
+	position: relative;
+	display: block;
+	margin-bottom: rem(20px);
+
+	&:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		border: 5px solid transparent;
+		border-top: 5px solid $yellow;
+		margin-right: rem(12px);
+		transition: .5s;
+	}
+
+	@include tablets {
+		font-size: rem(25px);
+	}
+}
+
+
+
+.team-acco__content {
+	overflow: hidden;
+	height: 0;
+	padding-left: rem(20px);
+	transition: .5s;
+}
+
+.team-acco__content-wrapp {
+	display: flex;
+	//height: 100px;
+}
+
+.team-acco__img {
+	@include inlineblock();
+	width: rem(100px);
+	height: rem(100px);
+	@include cover;
+	border-radius: 50%;
+}
+
+.team-acco__text {
+    width: 67%;
+	padding-left: rem(15px);
+	
+	@include tablets{
+        padding-left: 0;
+    }
+}
+
+.team-acco__title {
+	font-family: "Ubuntu";
+    font-weight: 700;
+	font-size: rem(14px);
+	color: #fff;
+	margin-bottom: rem(14px);
+
+	@include tablets {
+		margin-top: rem(22px);
+	}
+}
+
+.team-acco__text-content {
+	font-family: "Ubuntu";
+    font-weight: 300;
+	color: #fff;
+    font-size: rem(14px);
+    line-height: 24.01px;
+}

@@ -1,0 +1,39 @@
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+$white: #fff;
+$grey: #1f2122;
+
+// resolutions
+
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+//normalize
+@import "layout/normalize.scss";
+
+// setups
+@import "layout/media";
+@import "layout/mixins";
+@import "layout/fonts";
+@import "layout/base";
+
+
+// blocks
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/promo";
+@import "blocks/reviews";
+@import "blocks/best";
+@import "blocks/hamburger-menu-link";
+@import "blocks/team";
+@import "blocks/menu";
+@import "blocks/order-form";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/socials";

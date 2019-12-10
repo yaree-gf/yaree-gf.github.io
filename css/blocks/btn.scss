@@ -1,0 +1,35 @@
+.btn {
+    padding: rem(12px) rem(15px);
+    border-radius: rem(5px);
+    background-color: $red;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    font-size: rem(13px);
+}
+
+.btn__review{
+    background-color: $grey;
+
+    @include phones {
+        display: none;
+    }
+
+    &--phones{
+        background-color: $grey;
+        display: none;
+    
+        @include phones {
+            display: inline-block;
+        }
+    }
+}
+
+/*.btn__review--phones{
+    background-color: $grey;
+    display: none;
+
+    @include phones {
+        display: block;
+    }
+}*/

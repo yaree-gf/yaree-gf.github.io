@@ -1,0 +1,108 @@
+.promo {
+  height: 100vh;
+  background-image: url("../img/bg/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.promo__container {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.promo__content {
+  display: flex;
+  align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    padding: 0 16%;
+  }
+}
+
+.promo__right {
+    @include tablets {
+    text-align: center;
+    padding: rem(30px) 20% 0;
+  }
+}
+
+/*  .promo__left,
+.promo__right {
+  float: left;
+  width: 50%;
+  @include tablets {
+    float: none;
+    width: 100%;
+  }
+}
+
+.promo__left {
+  @include phones {
+    height: rem(230px);
+  }
+}
+
+.promo__right {
+  padding-top: rem(115px);
+  @include tablets {
+    text-align: center;
+    padding: rem(30px) 20% 0;
+  }
+  @include phones {
+    padding: 0 3%;
+  }
+}*/
+
+.promo__img {
+  width: 100%;
+  height: 100%;
+
+ /* @include tablets {
+    max-width: 80%;
+  }*/
+}
+
+.promo__title {
+  margin-left: rem(11px);
+  margin-top: rem(75px);
+  @include tablets{
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  @include phones {
+    font-size: rem(63px);
+  }
+}
+
+.promo__subtitle {
+  @include lifehack();
+  margin-top: rem(29px);
+  font-size: rem(62px);
+  color: $white;
+  line-height: 1;
+
+  @include phones {
+    font-size: rem(54px);
+  }
+}
+
+.promo__scroll-btn {
+  width: rem(29px);
+  height: rem(14px);
+  background-image: url(/img/section/arrow-scroll.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  bottom: rem(30px);
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,68 @@
+
+
+.footer {
+    width: 100%;
+    background-image: url("/img/bg/bg-footer.png");
+    background-size: cover;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  padding: rem(10px) 0;
+}
+
+.container--footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    @include phones {
+      flex-direction: column;
+    }
+  }
+
+  .footer__col {
+      display: flex;
+      width: 50%;
+    //margin-bottom: rem(15px);
+
+	@include phones {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+  }
+
+ .footer__socials {
+   justify-content: flex-end;
+
+   @include phones {
+    justify-content: center;
+   }
+ }
+
+  .footer__contacts {
+      flex-direction: column;
+      
+  }
+
+  .footer__adress {
+	color: $white;
+    font-size: rem(14px);
+    margin-bottom: rem(10px);
+    font-weight: 300;
+}
+
+.footer-phone {
+  width: rem(11px);
+  height: rem(11px);
+  margin-right: rem(5px);
+}
+
+.footer__phone {
+	color: $red;
+    font-family: "Ubuntu";
+    font-weight: 700;
+	text-decoration: none;
+	font-size: rem(14px);
+}
