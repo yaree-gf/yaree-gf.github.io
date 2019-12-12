@@ -798,7 +798,9 @@ table {
       flex-direction: row;
       width: 100%;
       margin-bottom: 1.5625rem;
-      padding: 0; } }
+      padding: 0; }
+      .best__item:last-child {
+        margin-bottom: 0; } }
 
 .best__icon {
   width: 6.25rem;
@@ -1302,7 +1304,8 @@ table {
   background-image: url("/img/bg/bg-map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  position: relative; }
 
 .footer {
   width: 100%;
