@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Js-test</title>
+    <!-- ДЗ 3й недели -->
+</head>
+
+<body>
+    <h1>Задачи Основы Javascript</h1>
+    <h2>Типы данных и переменные</h2>
+    <script>
+        var name = 'Анастасия';
+        console.log(name);
+       var name = 'Вован';
+       console.log(name);
+    </script>
+    <h2>Условный оператор if</h2>
+    <script>
+        if (5+6 < 1) {
+            console.log('да');
+        }
+        else {console.log('нет');}
+    </script>
+    <h2>Циклический оператор for</h2>
+    <script>
+        for (i = 11; i > 1; i--) {
+            console.log(i);
+        }
+    </script>
+    <h2>Функции</h2>
+    <script>
+        function sumtest (p1, p2, p3)
+        {
+            var sumresult = p1 + p2 + p3;
+            return sumresult;
+        }
+        sumresult = sumtest (10, 20, 30);
+        var sumconsole = sumresult;
+        console.log(sumconsole);
+
+        sumresult = sumtest (10, 2, 3);
+        var sumconsole = sumresult;
+        console.log(sumconsole);
+
+        sumresult = sumtest (15, 2.3, 63);
+        var sumconsole = sumresult;
+        console.log(sumconsole);
+    </script>
+
+    <h2>Массивы и объекты</h2>
+    <h3>Задание 1</h3>
+    <script>
+        var array = ['привет', 'loftschool'];
+        array.push('я изучаю');
+        array.push('javascript');
+        console.log(array.length);
+        
+        for (i=0; i<array.length; i++) {
+            console.log(array[i]);
+        }
+    </script>
+    <h3>Задание 2</h3>
+    <script>
+        var ar1 = [101, 4, 17, 108, 7, 42, 111, 509, 333, 88];
+        for (i=0; i<ar1.length; i++) {
+            
+            if (ar1[i]>100) {
+                console.log(ar1[i])
+            }
+        }
+    </script>
+    <h3>Задание 3</h3>
+    <script>
+        var obj = {
+            name: 'Анастасия',
+            lastName: 'Молодых',
+            age: 40
+        };
+        console.log(obj.name);
+        console.log(obj.lastName);
+        console.log(obj.age);
+        obj.age = 30;
+        console.log(obj.age);
+    </script>
+    <h3>Задание 4</h3>
+    <script>
+        function hello (human) {
+            var hi = 'Привет, меня зовут' + ' ' + human.name + ' ' + human.lastName + ' ' + 'и мне' + ' ' + human.age + ' ' + 'лет!';
+            return hi;
+        };
+        hi = hello (obj);
+        console.log(hi);
+    </script>
+</body>
+
+</html>
