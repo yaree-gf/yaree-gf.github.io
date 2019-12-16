@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Задачи по работе c DOM</title>
+    <!-- ДЗ 3й недели -->
+</head>
+<body>
+    <div class="container">
+        <h1 id="h1">Задачи по работе c DOM</h1>
+        <h2 class="task1">Задание 1</h2>
+    </div>
+<script>
+    let div = document.createElement('div');
+    document.body.appendChild(div);
+
+    let task1 = document.querySelector('.task1');
+    const elem1 = document.createElement('div');
+    task1.appendChild(elem1);
+
+    elem1.textContent = 'Этот элемент создан при помощи DOM API';
+    elem1.style.fontSize = '14px';
+
+    //Задание 2
+
+    const elem2 = document.createElement ('div');
+    elem1.appendChild(elem2);
+    elem2.className = 'inner';
+    elem2.textContent = 'Этот элемент тоже создан при помощи DOM API';
+
+    //Задание 3
+    elem2.style.color = 'red';
+
+    //Задание 4
+    elem2.addEventListener('click', function() {
+        console.log('Этот текст говорит о том, что я всё сделал правильно');
+    });
+</script>
+<h2>Задание 5</h2>
+<div class="task5"></div>
+<script>
+    const link = document.createElement('a');
+    const task5 = document.querySelector('.task5');
+    task5.appendChild(link);
+    link.href = 'https://loftschool.com';
+    link.textContent = ' я ссылка';
+    link.addEventListener('click', function(linkEvent) {
+        console.log('Я кликнул на ссылку ' + link.href);
+        linkEvent.preventDefault();
+    });
+</script>
+<h2>Задание 6</h2>
+<div class="task6"></div>
+<br>
+<script>
+        const button = document.createElement('button');
+        const input = document.createElement('input');
+        const task6 = document.querySelector('.task6');
+        
+        task6.appendChild(input);
+        input.type = 'text';
+
+        task6.appendChild(button);
+        button.textContent = 'я кнопка';
+        
+        button.addEventListener('click', function(eventButton) {
+            console.log(input.value);
+            eventButton.preventDefault();
+        });
+    </script>
+</body>
+</html>
