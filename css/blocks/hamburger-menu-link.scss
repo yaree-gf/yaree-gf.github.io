@@ -1,13 +1,19 @@
 .hamburger-menu-link {
 	vertical-align: middle;
-	position: relative;
+	//position: relative;
+
 	height: rem(22px);
 	align-items: center;
-	margin-left: rem(30px);
+	//margin-left: rem(30px);
 	display: none;
+	transition: transform .3s;
 
 	@include tablets {
 		display: inline-flex;
+		z-index: 20;
+		position: fixed;
+		top: rem(39px);
+		right: rem(33px);
 	}
 }
 
@@ -33,3 +39,4 @@
 		bottom: 0;
 	}
 }
+

@@ -1,0 +1,78 @@
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+    
+    position: fixed;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+  }
+
+  .overlay--active {
+    left: 0;
+    opacity: 1;
+  }
+  
+  .nav-overlay {
+    &__item {
+        font-family: Ubuntu;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: rem(20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+      &:after {
+        content:'';
+        display: inline-block;
+        height: rem(5px);
+        width: rem(5px);
+        background-color: #fff;
+        border-radius: 50%;
+        margin-top: rem(20px);
+      }
+      
+      &:last-child {
+        margin-bottom: 0;
+        
+        &:after {
+          display: none;
+        }
+      }
+    }
+    
+    &__link {
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+  
+  .hamburger-menu-link--active {
+	.hamburger-menu-link__bars {
+		background-color: transparent;
+		&:before {
+			transform: rotate(-45deg);
+			top: rem(8px);
+		}
+		&:after {
+			transform: rotate(45deg);
+			bottom: rem(9px);
+		}
+	}
+}
+
+ 
+  .body--active-menu {
+    overflow: hidden;
+  }

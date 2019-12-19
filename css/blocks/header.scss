@@ -8,6 +8,7 @@
 .header-logo {
     width: rem(98.265px);
     height: rem(74.317px);
+    z-index: 15;
 }
 
 .header__container {
@@ -18,4 +19,13 @@
 
 .header__wrapper{
     margin-left: rem(15px);
+}
+
+
+.header__links {
+    .btn {
+        @include tablets {
+            margin-right: rem(55px);
+        }
+    }
 }
