@@ -205,3 +205,50 @@
     margin-right: 0;
   }
 }
+
+/* overlay */
+
+
+.form__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(47, 50, 52, 0.9);
+    display: flex;
+    //display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+  
+  .form__overlay--container {
+    width: rem(400px);
+    background: #fff;
+    border-radius: rem(5px);
+    padding: rem(20px);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablets{
+        width: 80%;
+    }
+  }
+  
+  .form__overlay--content {
+    
+    color: $black;
+    font-size: rem(14px);
+    font-weight: 300;
+    line-height: rem(24px);
+    font-family: Ubuntu;
+  }
+  
+  .form__overlay--close {
+    margin-top: rem(10px);
+  }
+  

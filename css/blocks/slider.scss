@@ -17,6 +17,9 @@
         }
 }
 
+.slider__wrapp {
+    overflow: hidden; }
+
 .slider__pages {
     position: absolute;
     width: 100%;
@@ -52,6 +55,7 @@
 .slider__pages-img {
     max-width: 100%;
     max-height: 100%;
+
 }
 
 /*.slider-prev__img {
@@ -66,7 +70,7 @@
 
 .slider__list {
     display: flex;
-   // transition: 1s;
+    transition: 1s;
    
 }
 
@@ -81,7 +85,6 @@
     @include tablets {
         flex-direction: column;
         align-items: center;
-        //width: 80%;
     }
 }
 
@@ -117,8 +120,12 @@
 //}
 
 .slide__photo {
+    display: flex;
     margin: rem(60px) 0;
     flex-shrink: 0;
+    width: rem(505px);
+    height: rem(329px);
+    justify-content: center;
 
     @include phones {
         width: 80%;

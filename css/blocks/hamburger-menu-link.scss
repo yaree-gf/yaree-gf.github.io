@@ -23,6 +23,8 @@
 		width: rem(24px);
 		height: rem(5px);
 		border-radius: rem(3px);
+		transition: all .5s;
+		
 	}
 
 	&:before, &:after {

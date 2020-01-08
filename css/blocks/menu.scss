@@ -3,8 +3,6 @@
     background-image: url("/img/bg/bg-menu.png");
     background-size: cover;
 	position: relative;
-	//display: flex;
-	//justify-content: flex-end;
 }
 
 .menu__title {
@@ -23,7 +21,7 @@
 
 .menu-acco__item {
 	display: flex;
-
+	
 	&--open{
 		.menu-acco__title {
 			color: $yellow;
@@ -73,6 +71,7 @@
 	background: rgba(#2f3234, .93);
 	width: 0;
 	overflow: hidden;
+	transition: .4s;
 }
 
 .menu-acco__text {
